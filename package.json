@@ -1,0 +1,15 @@
+{
+  "name": "webpack-tutorial",
+  "version": "1.0.0",
+  "description": "Webpack tutorial",
+  "main": "app/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Sungho Cho <sungho.corea@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "webpack": "^2.2.1"
+  }
+}
