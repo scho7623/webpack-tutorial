@@ -1,15 +1,38 @@
 {
   "name": "webpack-tutorial",
   "version": "1.0.0",
-  "description": "Webpack tutorial",
-  "main": "app/index.js",
+  "description": "webpack tutorial",
+  "main": "src/index.js",
   "scripts": {
-    "build": "webpack",
+    "start": "npm run open:src",
     "open:src": "babel-node tools/srcServer.js"
   },
-  "author": "Sungho Cho <sungho.corea@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scho7623/webpack-tutorial.git"
+  },
+  "keywords": [
+    "webpack",
+    "react",
+    "redux"
+  ],
+  "author": "Sungho Cho <sungho.corea@gmail.com> (https://github.corp.ebay.com/SME/xs-market-client)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scho7623/webpack-tutorial/issues"
+  },
+  "homepage": "https://github.com/scho7623/webpack-tutorial#readme",
   "dependencies": {
+    "object-assign": "^4.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
@@ -17,9 +40,9 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-1": "^6.22.0",
     "browser-sync": "^2.18.8",
+    "connect-history-api-fallback": "^1.3.0",
     "html-webpack-plugin": "^2.28.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "redux-immutable-state-invariant": "^1.2.4",
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.17.1"
